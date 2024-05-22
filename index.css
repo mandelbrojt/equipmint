@@ -1,3 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(5,80,124); /* Fallback for browsers that do not support CSS gradients */
+    background: linear-gradient(45deg, rgba(5, 80, 124, 1) 0%, rgba(29, 168, 173, 1) 30%, rgba(10, 111, 80, 1) 60%, rgba(29, 168, 173, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
+    /* iPhone SE viewport */
+    height: 568px;
+    max-width: 320px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start
+}
+
+.app-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    color: #AAFDC7;
+    font-weight: 700;
+    font-size: 48px;
+    text-shadow: 3px 3px 0 #646464;
     margin: 0;
-} 
+}
+
+.slogan {
+    color: whitesmoke;
+    font-weight: 100;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.glassmorphic-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 80%;
+    height: auto;
+}
