@@ -4,7 +4,7 @@ export const equipmentArray = [
         category: "desktops",
         specs: ["Intel Core i7", "16GB RAM", "1 TB SSD", "NVIDIA RTX 4060 Ti"],
         id: 0,
-        price: 12345,
+        price: 1400,
         thumbnail: '/img/products/dell-xps.png',
         url: 'https://www.dell.com/en-us/shop/desktop-computers/new-xps-desktop/spd/xps-8960-desktop/usexpsthcto8960rpl21'
     },
