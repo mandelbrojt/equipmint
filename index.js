@@ -1,0 +1,2 @@
+import { equipmentArray } from "./equipmentData"
+
