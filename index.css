@@ -7,13 +7,12 @@ html {
     background: linear-gradient(45deg, rgba(5, 80, 124, 1) 0%, rgba(29, 168, 173, 1) 30%, rgba(10, 111, 80, 1) 60%, rgba(29, 168, 173, 1) 100%);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 body {
-    /* iPhone SE viewport */
-    max-height: 568px;
-    max-width: 320px;
+    max-height: 720px;
+    max-width: 420px;
     font-family: "Chakra Petch", sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -31,11 +30,11 @@ body {
 }
 
 .header-container {
-    position: sticky;
+    /* position: sticky;
     top: 0;
     z-index: 1;
-    width: 100%;
-    background-color: #363636;
+    width: 100%; */
+    /* background-color: #363636; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,10 +42,10 @@ body {
 }
 
 .main-title {
-    color: #AAFDC7;
+    color: #ebebeb;
     font-weight: 700;
     font-size: 48px;
-    text-shadow: 3px 3px 0 #646464;
+    text-shadow: 3px 3px 0 #05507C;
     margin: 0;
 }
 
