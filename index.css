@@ -21,12 +21,16 @@ body {
     align-items:flex-start
 }
 
-.app-container {
-    width: auto;
+.app-container,
+.header-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+}
+
+.app-container {
+    width: auto;
+    justify-content: flex-start;
 }
 
 .header-container {
@@ -34,11 +38,7 @@ body {
     top: 0;
     z-index: 1;
     width: 100%; */
-    /* background-color: #363636; */
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .main-title {
@@ -55,6 +55,36 @@ body {
     font-style: italic;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.product-container {
+    color: #A9FDC6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-info {
+    align-self: center;
+}
+
+.middle-info {
+    align-self: flex-start;
+}
+
+.right-info {
+    align-self: center;
+}
+
+.product-thumbnail {}
+
+.category-chip {
+    display: inline-block; /* Ensures the width is determined by the content */
+    padding: 5px 10px; /* Adjust padding to increase/decrease the chip size */
+    background-color: none; /* Background color of the chip */
+    border-radius: 50px; /* Creates the rounded chip effect */
+    font-size: 16px; /* Adjust font size to your preference */
+    color: #A9FDC6; /* Text color */
+    border: 1px solid #A9FDC6; /* Optional: add a border */      
 }
 
 .glassmorphic-card {
