@@ -11,7 +11,6 @@ html {
 }
 
 body {
-    max-height: 720px;
     max-width: 420px;
     font-family: "Chakra Petch", sans-serif;
     margin-top: 10px;
@@ -21,24 +20,29 @@ body {
     align-items:flex-start
 }
 
-.app-container,
-.header-container {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 460px;
+    overflow: scroll;
 }
 
 .app-container {
-    width: auto;
-    justify-content: flex-start;
-}
-
-.header-container {
-    /* position: sticky;
-    top: 0;
-    z-index: 1;
-    width: 100%; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .main-title {
@@ -61,31 +65,50 @@ body {
     color: #A9FDC6;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.left-info {
-    align-self: center;
-}
-
-.middle-info {
-    align-self: flex-start;
-}
-
+.left-info,
+.middle-info,
 .right-info {
     align-self: center;
 }
 
-.product-thumbnail {}
+.left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.middle-info {}
+
+.right-info {}
+
+.product-thumbnail {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+}
 
 .category-chip {
-    display: inline-block; /* Ensures the width is determined by the content */
-    padding: 5px 10px; /* Adjust padding to increase/decrease the chip size */
-    background-color: none; /* Background color of the chip */
-    border-radius: 50px; /* Creates the rounded chip effect */
-    font-size: 16px; /* Adjust font size to your preference */
-    color: #A9FDC6; /* Text color */
-    border: 1px solid #A9FDC6; /* Optional: add a border */      
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #A9FDC6;
+    border: 1px solid #A9FDC6;
+    margin: 4px;
 }
+
+.product-title {}
+
+.product-specs {}
+
+.product-price {}
+
+.add-product {}
 
 .glassmorphic-card {
     background: rgba(255, 255, 255, 0.2);
@@ -93,7 +116,5 @@ body {
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    width: 80%;
-    height: auto;
+    padding: 10px;
 }
