@@ -12,6 +12,7 @@ html {
 
 body {
     max-width: 420px;
+    max-height: 700px;
     font-family: "Chakra Petch", sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -25,7 +26,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 main {
@@ -35,7 +36,7 @@ main {
     align-items: center;
     width: 90%;
     height: 460px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .app-container {
@@ -66,12 +67,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.left-info,
-.middle-info,
-.right-info {
-    align-self: center;
+    margin-bottom: 20px;
 }
 
 .left-info {
@@ -81,9 +77,14 @@ main {
     justify-content:flex-start;
 }
 
-.middle-info {}
+.middle-info {
+    margin-left: 8px;
+}
 
-.right-info {}
+.right-info {
+    margin-left: 4px;
+    padding: 5px;
+}
 
 .product-thumbnail {
     height: 60px;
@@ -96,19 +97,41 @@ main {
     padding: 3px 6px;
     background-color: none;
     border-radius: 50px;
-    font-size: 16px;
+    font-size: 14px;
     color: #A9FDC6;
     border: 1px solid #A9FDC6;
     margin: 4px;
 }
 
-.product-title {}
+.product-title,
+.product-specs,
+.product-price {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
 
-.product-specs {}
+.product-specs {
+    font-style: italic;
+    line-height: 18px;
+}
 
-.product-price {}
+.product-price {
+    
+}
 
-.add-product {}
+.add-product {
+    color: #A9FDC6;
+    border: 1px solid #A9FDC6;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.add-product:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
 .glassmorphic-card {
     background: rgba(255, 255, 255, 0.2);
