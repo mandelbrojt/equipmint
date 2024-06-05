@@ -35,7 +35,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     width: 90%;
-    height: 460px;
+    height: 350px;
     overflow: auto;
 }
 
@@ -67,7 +67,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .left-info {
@@ -111,6 +111,7 @@ main {
 }
 
 .product-specs {
+    color:#05507C;
     font-style: italic;
     line-height: 18px;
 }
@@ -129,8 +130,16 @@ main {
 }
 
 .add-product:hover {
-    transform: scale(1.2);
+    border: 2px solid #A9FDC6;
     cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+
+.add-product:active {
+    border: 1px solid #0A6F50;
+    color: #0A6F50;
+    transform: scale(0.9);
 }
 
 .glassmorphic-card {
