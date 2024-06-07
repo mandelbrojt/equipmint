@@ -34,7 +34,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    padding-top: 5px;
     height: 340px;
     overflow: auto;
 }
@@ -67,7 +67,9 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 90%;
 }
 
 .image-section {
@@ -149,4 +151,9 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 10px;
+}
+
+.glassmorphic-card:hover {
+    transform: scale(1.05);
+    transition: all 0.2s;
 }
