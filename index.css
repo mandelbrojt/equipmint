@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     background: rgb(5,80,124); /* Fallback for browsers that do not support CSS gradients */
     background: linear-gradient(45deg, rgba(5, 80, 124, 1) 0%, rgba(29, 168, 173, 1) 30%, rgba(10, 111, 80, 1) 60%, rgba(29, 168, 173, 1) 100%);
@@ -12,7 +18,6 @@ html {
 
 body {
     max-width: 420px;
-    max-height: 700px;
     font-family: "Chakra Petch", sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -35,7 +40,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding-top: 5px;
-    height: 340px;
+    height: 360px;
     overflow: auto;
 }
 
@@ -135,7 +140,7 @@ main {
     border: 2px solid #A9FDC6;
     cursor: pointer;
     transform: scale(1.2);
-    transition: all 0.2s;
+    transition: all 0.15s;
 }
 
 .add-product:active {
@@ -156,4 +161,76 @@ main {
 .glassmorphic-card:hover {
     transform: scale(1.05);
     transition: all 0.2s;
+}
+
+/* LEASING MODAL STYLES */
+dialog {
+    width: 400px;
+    height: 600px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+dialog::backdrop {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+.leasing-dialog-main {
+    padding: 10px 30px;
+}
+
+.modal-title, 
+.product-title {
+    text-align: center;
+    margin: 5px 0 8px 0;
+}
+
+.visit-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-title {
+    width: 80%;
+}
+
+.row-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#close-leasing-dialog {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+#coupon-code {
+    width: 80px;
+}
+
+.selected-term-text,
+.curent-price-text {
+    margin: 8px 0;
+}
+
+#term-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#increase-term-btn,
+#decrease-term-btn {
+    font-size: 24px;
 }
