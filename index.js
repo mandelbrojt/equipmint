@@ -2,11 +2,9 @@ import { equipmentArray } from "./equipmentData.js"
 
 const defaultLeasingTerm = 12
 const mainContent = document.getElementById("main-content")
-
-/* LEASING MODAL MANAGER */
 const leasingDialog = document.getElementById("leasing-dialog")
-
 const closeLeasingDialogButton = document.getElementById("close-leasing-dialog")
+
 closeLeasingDialogButton.addEventListener("click", () => leasingDialog.close())
 
 document.addEventListener("click", function(event) {
@@ -32,7 +30,7 @@ function renderEquipments() {
         <h4 class="product-price">$${equipment.price.toLocaleString("en-US")} USD</h4>
     </div>
     <div class="button-section">
-        <button class="add-product" data-product-id="${equipment.id}">+</button>
+        <button id="add-product-btn" class="inc-dec" data-product-id="${equipment.id}">+</button>
     </div>
     </section>
     `).join("")
