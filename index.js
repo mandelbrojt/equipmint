@@ -30,7 +30,7 @@ function renderEquipments() {
         <h4 class="product-price">$${equipment.price.toLocaleString("en-US")} USD</h4>
     </div>
     <div class="button-section">
-        <button id="add-product-btn" class="inc-dec" data-product-id="${equipment.id}">+</button>
+        <i id="add-product-btn" class="fa-solid fa-circle-plus inc-dec" data-product-id="${equipment.id}"></i>
     </div>
     </section>
     `).join("")
