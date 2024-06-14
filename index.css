@@ -128,12 +128,11 @@ main {
 }
 
 #add-product-btn {
-    color: #A9FDC6;
-    border: 1px solid #A9FDC6;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: transparent;
+    font-size: 24px;
+}
+
+#add-product-btn:active {
+    color: #05507C;
 }
 
 .inc-dec {
@@ -169,10 +168,11 @@ main {
 
 /* LEASING MODAL STYLES */
 #leasing-dialog {
-    background: rgba(169, 253, 198, 0.4);
-    color: #05507c;
     width: 400px;
     height: 600px;
+    color: #05507c;
+    background: rgba(169, 253, 198, 0.4);
+    border: 1px solid rgba(5, 80, 124, 0.5);
     border-radius: 10px;
     padding: 20px;
 }
