@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 html, body {
@@ -18,7 +19,6 @@ html {
 
 body {
     max-width: 420px;
-    font-family: "Chakra Petch", sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -127,7 +127,7 @@ main {
     
 }
 
-.add-product {
+#add-product-btn {
     color: #A9FDC6;
     border: 1px solid #A9FDC6;
     width: 30px;
@@ -136,16 +136,16 @@ main {
     background-color: transparent;
 }
 
-.add-product:hover {
-    border: 2px solid #A9FDC6;
+.inc-dec {
     cursor: pointer;
+}
+
+.inc-dec:hover {
     transform: scale(1.2);
     transition: all 0.15s;
 }
 
-.add-product:active {
-    border: 1px solid #0A6F50;
-    color: #0A6F50;
+.inc-dec:active {
     transform: scale(0.9);
 }
 
@@ -163,11 +163,17 @@ main {
     transition: all 0.2s;
 }
 
+.hidden {
+    display: none;
+}
+
 /* LEASING MODAL STYLES */
-dialog {
+#leasing-dialog {
+    background: rgba(169, 253, 198, 0.4);
+    color: #05507c;
     width: 400px;
     height: 600px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
 }
 
@@ -192,7 +198,6 @@ h4 {
 
 .visit-product {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -200,6 +205,19 @@ h4 {
 .product-title {
     width: 80%;
 }
+
+#product-link-icon {
+    text-align: left;
+}
+
+.product-link:link {
+    color: #05507C;
+}
+
+.product-link:visited {
+    color: #05507C;
+}
+
 
 .row-container {
     display: flex;
@@ -209,15 +227,36 @@ h4 {
 }
 
 #close-leasing-dialog {
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
-    top: 5px;
-    right: 8px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
 }
 
-#coupon-code {
-    width: 80px;
+.coupon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#coupon-code-input {
+    background: rgba(5, 80, 124,0.1);
+    border: 1px solid #05507C;
+    border-radius: 5px;
+    width: 90px;
+    padding: 5px;
+}
+
+#coupon-code-input,
+#coupon-code-input::placeholder {
+    color:#05507C;
+    font-weight: bold;
+}
+
+#apply-coupon-btn {
+    font-size: 20px;
 }
 
 .selected-term-text,
