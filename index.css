@@ -40,7 +40,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding-top: 5px;
-    height: 360px;
+    height: 400px;
     overflow: auto;
 }
 
@@ -112,7 +112,8 @@ main {
 
 .product-title,
 .product-specs,
-.product-price {
+.product-price { 
+    text-align: left;
     margin-top: 0;
     margin-bottom: 8px;
 }
@@ -123,9 +124,9 @@ main {
     line-height: 18px;
 }
 
-.product-price {
+/* .product-price {
     
-}
+} */
 
 #add-product-btn {
     font-size: 24px;
@@ -191,7 +192,7 @@ h4 {
 }
 
 .modal-title, 
-.product-title {
+.product-name {
     text-align: center;
     margin: 5px 0 8px 0;
 }
@@ -200,14 +201,11 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.product-title {
-    width: 80%;
+    gap: 4px;
 }
 
 #product-link-icon {
-    text-align: left;
+    align-self: center;
 }
 
 .product-link:link {
@@ -259,9 +257,19 @@ h4 {
     font-size: 20px;
 }
 
+.product-name,
+.curent-price-text,
 .selected-term-text,
-.curent-price-text {
+.installments-text {
     margin: 8px 0;
+}
+
+.installments-text {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: chocolate;
+    font-style: italic;
+
 }
 
 #term-buttons {
