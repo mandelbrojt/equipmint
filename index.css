@@ -216,7 +216,6 @@ h4 {
     color: #05507C;
 }
 
-
 .row-container {
     display: flex;
     justify-content: space-around;
@@ -257,10 +256,19 @@ h4 {
     font-size: 20px;
 }
 
+.warning-message {
+    color: rgb(255, 89, 0);
+}
+
+.successful-message {
+    color: rgb(36, 85, 209);
+}
+
 .product-name,
 .curent-price-text,
 .selected-term-text,
-.installments-text {
+.installments-text,
+#coupon-validation-message {
     margin: 8px 0;
 }
 
