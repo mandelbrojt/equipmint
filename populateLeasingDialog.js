@@ -12,6 +12,6 @@ export function populateLeasingDialog(equipmentId) {
     
     productSource.setAttribute("href", filteredData.url)
     productName.textContent = filteredData.name
-    currentPrice.textContent = `${filteredData.price.toLocaleString("en-US")} USD`
+    currentPrice.textContent = `$${filteredData.price.toLocaleString("en-US")} USD`
     leasingTerm.textContent = `${defaultLeasingTerm} months`
 }
