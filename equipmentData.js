@@ -8,7 +8,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 1400,
         thumbnail: '/img/products/dell-xps.png',
-        url: 'https://www.dell.com/en-us/shop/desktop-computers/new-xps-desktop/spd/xps-8960-desktop/usexpsthcto8960rpl21'
+        url: 'https://www.dell.com/en-us/shop/desktop-computers/new-xps-desktop/spd/xps-8960-desktop/usexpsthcto8960rpl21',
+        couponIsUsed: false
     },
     {
         name: "iPad 10th gen",
@@ -17,7 +18,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 700,
         thumbnail: '/img/products/ipad-10th-gen-magic-keyboard.jpeg',
-        url: 'https://www.apple.com/ipad-10.9/'
+        url: 'https://www.apple.com/ipad-10.9/',
+        couponIsUsed: false
     },
     {
         name: "Lenovo Legion 7",
@@ -26,7 +28,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 2442,
         thumbnail: '/img/products/lenovo-legion-7.png',
-        url: 'https://www.lenovo.com/us/en/p/laptops/legion-laptops/legion-pro-series/lenovo-legion-pro-7i-gen-9-(16-inch-intel)/len101g0034'
+        url: 'https://www.lenovo.com/us/en/p/laptops/legion-laptops/legion-pro-series/lenovo-legion-pro-7i-gen-9-(16-inch-intel)/len101g0034',
+        couponIsUsed: false
     },
     {
         name: "Equipment XYZ",
@@ -35,7 +38,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 12345,
         thumbnail: '/img/products',
-        url: 'wwww.somewhere.com'
+        url: 'wwww.somewhere.com',
+        couponIsUsed: false
     },
     {
         name: "Equipment XYZ",
@@ -44,7 +48,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 12345,
         thumbnail: '/img/products',
-        url: 'wwww.somewhere.com'
+        url: 'wwww.somewhere.com',
+        couponIsUsed: false
     },
     {
         name: "Galaxy Tab S9 FE+",
@@ -53,7 +58,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 600,
         thumbnail: '/img/products/galaxy-tab-s9-fe-plus.png',
-        url: 'https://www.samsung.com/us/tablets/galaxy-tab-s9-fe/'
+        url: 'https://www.samsung.com/us/tablets/galaxy-tab-s9-fe/',
+        couponIsUsed: false
     },
     {
         name: "Starforge Navigator",
@@ -62,7 +68,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 1900,
         thumbnail: '/img/products/navigator-hero.png',
-        url: 'https://starforgesystems.com/products/navigator'
+        url: 'https://starforgesystems.com/products/navigator',
+        couponIsUsed: false
     },
     {
         name: "Mac Pro",
@@ -71,7 +78,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 7000,
         thumbnail: '/img/products/mac-pro-tower.jpeg',
-        url: 'https://www.apple.com/am/mac-pro/'
+        url: 'https://www.apple.com/am/mac-pro/',
+        couponIsUsed: false
     },
     {
         name: 'MacBook Air 15-inch',
@@ -80,7 +88,8 @@ export const equipmentArray = [
         id: uuid(),
         price: 1300,
         thumbnail: '/img/products/macbook-air-15-m3.jpeg',
-        url: 'https://www.apple.com/shop/buy-mac/macbook-air/15-inch-m3'
+        url: 'https://www.apple.com/shop/buy-mac/macbook-air/15-inch-m3',
+        couponIsUsed: false
     },
     {
         name: "Equipment XYZ",
@@ -89,6 +98,7 @@ export const equipmentArray = [
         id: uuid(),
         price: 12345,
         thumbnail: '/img/products',
-        url: 'wwww.somewhere.com'
+        url: 'wwww.somewhere.com',
+        couponIsUsed: false
     },
 ]
