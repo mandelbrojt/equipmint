@@ -1,24 +1,16 @@
-import { equipmentArray } from "./equipmentData.js"
-import { populateLeasingDialog } from "./populateLeasingDialog.js"
+import { populateLeaseDialog } from "./populateLeasingDialog.js"
 import { renderEquipments } from "./renderEquipments.js"
-// import { applyCouponCode } from "./applyCouponCode.js"
 
-
-const leasingDialog = document.getElementById("leasing-dialog")
-const closeLeasingDialogButton = document.getElementById("close-leasing-dialog")
-// const applyCouponButton = document.getElementById("apply-coupon-btn")
-// const currentCouponCode = document.getElementById("coupon-code-input")
+// const leasingDialog = document.getElementById("leasing-dialog")
+// const closeLeasingDialogButton = document.getElementById("close-leasing-dialog")
 
 renderEquipments()
 
-closeLeasingDialogButton.addEventListener("click", () => leasingDialog.close())
-
-// applyCouponButton.addEventListener("click", () => applyCouponCode())
+// closeLeasingDialogButton.addEventListener("click", () => leasingDialog.close())
 
 document.addEventListener("click", function(event) {
     // console.log(event)
     if (event.target.dataset.productId) {
-        populateLeasingDialog(event.target.dataset.productId)
-        leasingDialog.showModal()
+        populateLeaseDialog(event.target.dataset.productId)
     }
 })
