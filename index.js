@@ -1,4 +1,4 @@
-import { populateLeaseDialog } from "./populateLeasingDialog.js"
+import { populateLeaseDialog } from "./leaseDialogManager.js"
 import { renderEquipments } from "./renderEquipments.js"
 
 // const leasingDialog = document.getElementById("leasing-dialog")
