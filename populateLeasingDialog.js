@@ -49,7 +49,7 @@ export function populateLeaseDialog(equipmentId) {
     `
 
     modal.innerHTML += modalContent
-    modal.show()
+    modal.showModal()
 
     // if (leasingTerm === 12) {
     //     decrementTermButton.classList.toggle("disabled")
