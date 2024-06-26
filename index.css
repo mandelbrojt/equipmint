@@ -132,10 +132,6 @@ main {
     font-size: 24px;
 }
 
-#add-product-btn:active {
-    color: #05507C;
-}
-
 .inc-dec {
     cursor: pointer;
 }
@@ -167,8 +163,13 @@ main {
     display: none;
 }
 
-/* LEASING MODAL STYLES */
-#leasing-dialog {
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* LEASE MODAL STYLES */
+#lease-dialog {
     width: 400px;
     height: 600px;
     color: #05507c;
@@ -187,7 +188,7 @@ h4 {
     margin-bottom: 0;
 }
 
-.leasing-dialog-main {
+.lease-dialog-main {
     padding: 10px 30px;
 }
 
@@ -223,7 +224,7 @@ h4 {
     flex-wrap: wrap;
 }
 
-#close-leasing-dialog {
+#close-lease-dialog {
     font-size: 22px;
     position: absolute;
     top: 10px;
@@ -272,20 +273,32 @@ h4 {
     margin: 8px 0;
 }
 
+#term-controls {
+    justify-content: space-between;
+}
+
 .installments-text {
     margin-top: 0;
     margin-bottom: 8px;
     color: chocolate;
     font-style: italic;
-
 }
 
 #term-buttons {
     display: flex;
-    gap: 10px;
+    gap: 12px;
+    margin-right: 40px;
 }
 
 #increase-term-btn,
 #decrease-term-btn {
     font-size: 24px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.costs-section {
+    margin-top: 10px;
 }
