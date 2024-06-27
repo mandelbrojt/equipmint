@@ -48,31 +48,12 @@ export function populateLeaseDialog(equipmentId) {
         </div>
     `
 
-    modal.innerHTML += modalContent
+    modal.innerHTML = modalContent // Clear previous content and set new content
     modal.showModal()
 
-    // if (leasingTerm === 12) {
-    //     decrementTermButton.classList.toggle("disabled")
-    //     decrementTermButton.classList.toggle("inc-dec")
-    // }
-    // else if (leasingTerm === 36) {
-    //     incrementTermButton.classList.toggle("disabled")
-    //     incrementTermButton.classList.toggle("inc-dec")
-    // }
-
-    // incrementTermButton.addEventListener("click", () => incrementTerm())
-    // decrementTermButton.addEventListener("click", () => decrementTerm())
+    const closeLeaseDialogButton = document.getElementById("close-lease-dialog")
+    closeLeaseDialogButton.addEventListener("click", function() {
+        modal.close()
+        modal.innerHTML = "" // Clear the content when closing
+    })
 }
-
-// function incrementTerm() {
-//     if (leasingTerm < 36) {
-//         leasingTerm += 6
-//     }
-//     selectedTerm.textContent = `${leasingTerm} months`
-// }
-// function decrementTerm() {
-//     if (leasingTerm > 12) {
-//         leasingTerm -= 6
-//     }
-//     selectedTerm.textContent = `${leasingTerm} months`
-// }
